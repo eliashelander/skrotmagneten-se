@@ -59,7 +59,7 @@ function generateSitemap({
   const products = flattenConnection(data.products)
     .filter((product) => product.onlineStoreUrl)
     .map((product) => {
-      const url = `${baseUrl}/produkter/${xmlEncode(product.handle)}`;
+      const url = `${baseUrl}/products/${xmlEncode(product.handle)}`;
 
       const productEntry: Entry = {
         url,
@@ -87,7 +87,7 @@ function generateSitemap({
   const collections = flattenConnection(data.collections)
     .filter((collection) => collection.onlineStoreUrl)
     .map((collection) => {
-      const url = `${baseUrl}/kategorier/${collection.handle}`;
+      const url = `${baseUrl}/collections/${collection.handle}`;
 
       return {
         url,
@@ -99,7 +99,7 @@ function generateSitemap({
   const pages = flattenConnection(data.pages)
     .filter((page) => page.onlineStoreUrl)
     .map((page) => {
-      const url = `${baseUrl}/sidor/${page.handle}`;
+      const url = `${baseUrl}/pages/${page.handle}`;
 
       return {
         url,

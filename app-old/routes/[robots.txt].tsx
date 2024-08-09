@@ -20,6 +20,33 @@ export async function loader({request, context}: LoaderFunctionArgs) {
   });
 }
 
+export function ErrorBoundary() {
+  const error = useRouteError();
+
+  if (isRouteErrorResponse(error)) {
+    return (
+      <div>
+        <h1>Oops</h1>
+        <p>Status: {error.status}</p>
+        <p>{error.data.message}</p>
+      </div>
+    );
+  }
+
+  let errorMessage = 'Unknown error';
+  if (error instanceof Error) {
+    errorMessage = error.message;
+  }
+
+  return (
+    <div>
+      <h1>Uh oh ...</h1>
+      <p>Something went wrong.</p>
+      <pre>{errorMessage}</pre>
+    </div>
+  );
+}
+
 function robotsTxtData({url, shopId}: {shopId?: string; url?: string}) {
   const sitemapUrl = url ? `${url}/sitemap.xml` : undefined;
 
@@ -31,7 +58,7 @@ ${generalDisallowRules({sitemapUrl, shopId})}
 User-agent: adsbot-google
 Disallow: /checkouts/
 Disallow: /checkout
-Disallow: /varukorgs
+Disallow: /carts
 Disallow: /orders
 ${shopId ? `Disallow: /${shopId}/checkouts` : ''}
 ${shopId ? `Disallow: /${shopId}/orders` : ''}
@@ -70,39 +97,39 @@ function generalDisallowRules({
   sitemapUrl?: string;
 }) {
   return `Disallow: /admin
-Disallow: /varukorg
+Disallow: /cart
 Disallow: /orders
 Disallow: /checkouts/
 Disallow: /checkout
 ${shopId ? `Disallow: /${shopId}/checkouts` : ''}
 ${shopId ? `Disallow: /${shopId}/orders` : ''}
-Disallow: /varukorgs
+Disallow: /carts
 Disallow: /account
-Disallow: /kategorier/*sort_by*
-Disallow: /*/kategorier/*sort_by*
-Disallow: /kategorier/*+*
-Disallow: /kategorier/*%2B*
-Disallow: /kategorier/*%2b*
-Disallow: /*/kategorier/*+*
-Disallow: /*/kategorier/*%2B*
-Disallow: /*/kategorier/*%2b*
-Disallow: */kategorier/*filter*&*filter*
-Disallow: /blogg/*+*
-Disallow: /blogg/*%2B*
-Disallow: /blogg/*%2b*
-Disallow: /*/blogg/*+*
-Disallow: /*/blogg/*%2B*
-Disallow: /*/blogg/*%2b*
+Disallow: /collections/*sort_by*
+Disallow: /*/collections/*sort_by*
+Disallow: /collections/*+*
+Disallow: /collections/*%2B*
+Disallow: /collections/*%2b*
+Disallow: /*/collections/*+*
+Disallow: /*/collections/*%2B*
+Disallow: /*/collections/*%2b*
+Disallow: */collections/*filter*&*filter*
+Disallow: /blogs/*+*
+Disallow: /blogs/*%2B*
+Disallow: /blogs/*%2b*
+Disallow: /*/blogs/*+*
+Disallow: /*/blogs/*%2B*
+Disallow: /*/blogs/*%2b*
 Disallow: /*?*oseid=*
 Disallow: /*preview_theme_id*
 Disallow: /*preview_script_id*
-Disallow: /policyer/
+Disallow: /policies/
 Disallow: /*/*?*ls=*&ls=*
 Disallow: /*/*?*ls%3D*%3Fls%3D*
 Disallow: /*/*?*ls%3d*%3fls%3d*
-Disallow: /sok
-Allow: /sok/
-Disallow: /sok/?*
+Disallow: /search
+Allow: /search/
+Disallow: /search/?*
 Disallow: /apple-app-site-association
 Disallow: /.well-known/shopify/monorail
 ${sitemapUrl ? `Sitemap: ${sitemapUrl}` : ''}`;

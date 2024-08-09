@@ -21,7 +21,7 @@ import type {CustomerAccessToken} from '@shopify/hydrogen/storefront-api-types';
 import favicon from '../public/favicon.png';
 import appStyles from './styles/app.css';
 import tailwindStyles from './styles/tailwind.css';
-import {Layout} from '~/components/Layout';
+import {Layout} from './components/Layout';
 
 /**
  * This is important to avoid re-fetching root queries on sub-navigations
