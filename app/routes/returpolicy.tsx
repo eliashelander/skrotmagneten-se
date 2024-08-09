@@ -2,7 +2,7 @@ import type {MetaFunction} from '@netlify/remix-runtime';
 import {Container} from '~/components/Container';
 
 export const meta: MetaFunction = () => {
-  return [{title: `Stallmagneten | Returpolicy`}];
+  return [{title: `Skrotmagneten | Returpolicy`}];
 };
 
 export default function Returpolicy() {
@@ -18,7 +18,7 @@ export default function Returpolicy() {
         <h2 className="text-3xl my-4">Byte</h2>
         <p>
           Kontakta oss via{' '}
-          <a href="mailto:hej@stallmagneten.se">hej@stallmagneten.se</a>, begär
+          <a href="mailto:hej@skrotmagneten.se">hej@skrotmagneten.se</a>, begär
           en retursedel och skicka tillbaka varan med posten. Du kan byta ut
           produkten mot en annan, eller i händelse av att bytet beror på
           funktionsfel byts den mot en ny produkt som sedan skickas på nytt till

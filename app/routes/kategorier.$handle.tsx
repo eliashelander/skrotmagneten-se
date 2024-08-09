@@ -10,7 +10,7 @@ import type {ProductItemFragment} from 'storefrontapi.generated';
 import {useVariantUrl, withoutDecimals} from '~/utils';
 
 export const meta: MetaFunction<typeof loader> = ({data}) => {
-  return [{title: `Stallmagneten | ${data?.collection.title ?? ''} Kategori`}];
+  return [{title: `Skrotmagneten | ${data?.collection.title ?? ''} Kategori`}];
 };
 
 export async function loader({request, params, context}: LoaderFunctionArgs) {

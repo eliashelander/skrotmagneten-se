@@ -6,7 +6,7 @@ import type {ArticleItemFragment} from 'storefrontapi.generated';
 import Button from '~/components/Button';
 
 export const meta: MetaFunction = () => {
-  return [{title: `Stallmagneten | Blogg`}];
+  return [{title: `Skrotmagneten | Blogg`}];
 };
 
 export const loader = async ({

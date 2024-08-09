@@ -30,7 +30,7 @@ interface UpsellProduct {
 }
 
 export const meta: MetaFunction<typeof loader> = ({data}) => {
-  return [{title: `Stallmagneten | ${data?.product.title ?? ''}`}];
+  return [{title: `Skrotmagneten | ${data?.product.title ?? ''}`}];
 };
 
 export async function loader({params, request, context}: LoaderFunctionArgs) {

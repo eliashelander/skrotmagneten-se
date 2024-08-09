@@ -9,7 +9,7 @@ import {useRootLoaderData} from '~/root';
 import {Container} from '~/components/Container';
 
 export const meta: MetaFunction = () => {
-  return [{title: `Stallmagneten | Varukorg`}];
+  return [{title: `Skrotmagneten | Varukorg`}];
 };
 
 export async function action({request, context}: ActionFunctionArgs) {

@@ -30,8 +30,8 @@ function FooterMenu({
       <div className="flex text-white py-16">
         <div className="flex flex-col flex-1 gap-2">
           <h3 className="text-2xl mb-4">Kundtjänst</h3>
-          <a className="text-lg" href="mailto:hej@stallmagneten.se">
-            hej@stallmagneten.se
+          <a className="text-lg" href="mailto:hej@skrotmagneten.se">
+            hej@skrotmagneten.se
           </a>
           <p className="text-lg">
             Bridget Hovslagare AB
@@ -78,7 +78,7 @@ function FooterMenu({
         </div>
       </div>
       <div className="flex py-4 gap-4 text-white/80">
-        <span>© 2023 Stallmagneten</span>
+        <span>© 2023 Skrotmagneten</span>
         <span>|</span>
         <span>
           Hemsida skapad och underhålls av{' '}

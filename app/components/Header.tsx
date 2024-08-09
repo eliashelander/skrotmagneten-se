@@ -30,8 +30,11 @@ export function Header({header, isLoggedIn, cart}: HeaderProps) {
           <div className={`flex items-center sticky py-0 px-4 h-16 top-0 z-40`}>
             <NavLink prefetch="intent" to="/" style={activeLinkStyleLight} end>
               {shop.brand?.logo?.image ? (
-                <div className="w-36 md:w-44">
-                  <Image data={shop.brand?.logo?.image} />
+                <div className="w-48 sm:w-60 md:w-72">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0847/4509/3413/files/white-png.png?v=1723215017"
+                    alt={shop.name}
+                  />
                 </div>
               ) : (
                 <strong>{shop.name}</strong>

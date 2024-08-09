@@ -2,7 +2,7 @@ import type {MetaFunction} from '@netlify/remix-runtime';
 import {Container} from '~/components/Container';
 
 export const meta: MetaFunction = () => {
-  return [{title: `Stallmagneten | Köpvillkor`}];
+  return [{title: `Skrotmagneten | Köpvillkor`}];
 };
 
 export default function Kopvillkor() {
@@ -11,14 +11,14 @@ export default function Kopvillkor() {
       <div className="pb-8">
         <h1 className="text-4xl my-8">Köpvillkor</h1>
         <h2 className="text-3xl my-4">
-          1. Om Stallmagneten (Bridget Hovslagare AB)
+          1. Om Skrotmagneten (Bridget Hovslagare AB)
         </h2>
         <p>
           Företaget har sitt säte i Täby. Företagets postadress är Täby, 18368,
           Norra Catalinagränd 10.
           <br />
           Önskar du att komma i kontakt med oss, skicka ett mail till
-          hej@stallmagneten.se med ditt ärende och dina kontaktuppgifter så hör
+          hej@skrotmagneten.se med ditt ärende och dina kontaktuppgifter så hör
           vi av oss inom kort.
         </p>
         <h2 className="text-3xl my-4">2. Beställning</h2>
@@ -28,7 +28,7 @@ export default function Kopvillkor() {
           pris, fakturerings- och leveransadress.
           <br />
           Är något fel i orderbekräftelsen ska du omedelbart kontakta oss via
-          e-post till hej@stallmagneten.se.
+          e-post till hej@skrotmagneten.se.
         </p>
         <h2 className="text-3xl my-4">3. Leverans</h2>
         <p>
@@ -37,7 +37,7 @@ export default function Kopvillkor() {
           <br />
           Om förseningar i leveransen skulle uppstå (utan att vi har meddelat
           dig om längre leveranstid) ska du kontakta oss på e-postadress:
-          hej@stallmagneten.se.
+          hej@skrotmagneten.se.
         </p>
         <h2 className="text-3xl my-4">4. Priser</h2>
         <p>
@@ -58,7 +58,7 @@ export default function Kopvillkor() {
           <h3 className="text-2xl my-4">5.1 Vid nyttjande av din ångerrätt</h3>
           <p>
             Du måste meddela att du ångrar dig. Meddelandet ska skickas till oss
-            hej@stallmagneten.se. I ditt meddelande ska ditt namn, din adress,
+            hej@skrotmagneten.se. I ditt meddelande ska ditt namn, din adress,
             e-postadress, ordernumret samt vilka varor som returneringen gäller
             framgå klart och tydligt.
             <br />
@@ -117,7 +117,7 @@ export default function Kopvillkor() {
           </h3>
           <p>
             Eventuella fel och defekt ska alltid reklameras till
-            hej@stallmagneten.se där du anger ditt namn, din adress,
+            hej@skrotmagneten.se där du anger ditt namn, din adress,
             e-postadress, ordernummer och en beskrivning av felet.
             <br />
             Om det inte lyckas oss att åtgärda felet eller leverera en liknande
@@ -165,13 +165,13 @@ export default function Kopvillkor() {
         </p>
         <h2 className="text-3xl my-4">10. Personuppgifter</h2>
         <p>
-          Genom att handla hos Stallmagneten (Bridget Hovslagare AB) accepterar
+          Genom att handla hos Skrotmagneten (Bridget Hovslagare AB) accepterar
           du vår dataskyddspolicy och vår behandling av dina personuppgifter. Vi
           värnar om din personliga integritet och samlar inte in fler uppgifter
           än nödvändigt för att behandla din beställning. Vi säljer eller
           vidareger aldrig dina uppgifter till tredjepart utan rättslig grund.
           <br />
-          Stallmagneten (Bridget Hovslagare AB) är ansvarig för behandlingen av
+          Skrotmagneten (Bridget Hovslagare AB) är ansvarig för behandlingen av
           personuppgifter som du lämnat till oss som kund. Dina personuppgifter
           behandlas av oss för att kunna hantera din beställning samt i de
           tillfällen då du har önskat nyhetsbrev eller kampanjerbjudanden - för
@@ -261,7 +261,7 @@ export default function Kopvillkor() {
           </p>
           <h3 className="text-2xl my-4">10.8 Ansvarig för dataskydd</h3>
           <p>
-            Stallmagneten (Bridget Hovslagare AB) är ansvarig för lagring och
+            Skrotmagneten (Bridget Hovslagare AB) är ansvarig för lagring och
             behandling av personuppgifter i webbutiken och ser till att reglerna
             efterföljs.
           </p>

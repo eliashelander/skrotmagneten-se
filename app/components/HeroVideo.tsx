@@ -14,7 +14,7 @@ export const HeroVideo: React.FC = () => {
       />
       <div className="absolute h-full w-full z-30 flex flex-col items-center justify-center gap-4 px-4">
         <h1 className="font-bold text-4xl text-white text-center">
-          Aldrig mer spiktramp i stallet
+          Aldrig mer punka med Skrotmagneten
         </h1>
         <Button
           to="/produkter/"

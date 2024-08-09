@@ -13,7 +13,7 @@ import {HeroImage} from '~/components/HeroImage';
 import {withoutDecimals} from '~/utils';
 
 export const meta: MetaFunction = () => {
-  return [{title: 'Stallmagneten | Aldrig mer spiktramp i stallet'}];
+  return [{title: 'Skrotmagneten | Aldrig mer punka med Skrotmagneten'}];
 };
 
 export async function loader({context}: LoaderFunctionArgs) {
@@ -32,35 +32,33 @@ export default function Homepage() {
       <Container>
         <ImageText
           imageSrc="https://cdn.shopify.com/s/files/1/0847/4509/3413/files/spik.jpg?v=1702584395"
-          title="TAPPADE NYCKLAR, SPIKAR ELLER ANNAT"
-          text="Med starka magneter kan du snabbt och enkelt städa upp allt metallspill. Fungerar utmärkt i halm, sand, kort gräs m.m."
+          title="Tappade nycklar, spik eller annat magnetiskt"
+          text="Med starka magneter kan du snabbt och enkelt städa upp allt metallspill och undvika punka på bildäck eller trampa illa och få spik i skon..."
           imageSide="right"
         />
         <ImageText
           imageSrc="https://cdn.shopify.com/s/files/1/0847/4509/3413/files/bekvam-stallmagnet.jpg?v=1702589624"
-          title="BEKVÄM UTAN RYGGONT"
-          text="Stallmagneten är enklare att använda än en sopkvast. Slipp böja på ryggen och låten hjulen rulla med lågt motstånd."
+          title="Bekväm utan ryggont"
+          text="Skrotmagneten är enklare att använda än en sopkvast. Slipp böja på ryggen och låt hjulen rulla med lågt motstånd."
           imageSide="left"
         />
         <ImageText
           imageSrc="https://cdn.shopify.com/s/files/1/0847/4509/3413/files/skoning-hovslagare.jpg?v=1702589850"
-          title="VID SKONING AV DIN HÄST"
-          text="Säker städning när din hovslagare skott din häst."
+          title="Enkel och säker hantering"
+          text="Du släpper metallen med ett enkelt grepp på skaftet så du slipper ta bort metallen du samlat upp med fingrarna och riskera att skada dig."
           imageSide="right"
+        />
+        <ImageText
+          imageSrc="https://cdn.shopify.com/s/files/1/0847/4509/3413/files/bekvam-stallmagnet.jpg?v=1702589624"
+          title="Miljötänk"
+          text="Separera all metall från ert skräp och sortera miljövänligt."
+          imageSide="left"
         />
         <Testimonials
           testimonials={[
             {
               name: 'Jedhammars Byggtjänst',
               text: 'Den var bättre än jag trodde och den plockar upp spik i gräset bra. Jag har även haft den till att plocka plåtspill efter plåtslagaren.',
-            },
-            {
-              name: 'EnKå Häst & Service AB',
-              text: 'Stallmagneten är fantastisk! Vi använder den såklart alltid efter skoning då den är oslagbar på att hitta dom där små avknippsade sömmarna som är svåra att både se och få upp med sopborsten. Vi använder den även för att få upp allt järnflis vid hovslagarbilarna där skorna slipas. Den är också bra till att hitta rostigt och osynligt för ögat annat småspik och järnskrot runtom på gården. Rekommenderas varmt. EnKå Häst & Service AB driver inackorderingsstall Söderby i Lindholmen med ca 40 hästar.',
-            },
-            {
-              name: 'Stall Grindtorp, Åkersberga',
-              text: `Stallmagneten underlättar enormt! Det är många som använder hovslagarplatsen och det ska vara lätt att städa och hålla snyggt. Med Stallmagneten går det snabbt och smidigt att källsortera ”småmetall” så att de inte hamnar i gödselstacken och sedan på åkern.`,
             },
           ]}
         />

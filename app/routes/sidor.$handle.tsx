@@ -2,7 +2,7 @@ import {json, type LoaderFunctionArgs} from '@netlify/remix-runtime';
 import {useLoaderData, type MetaFunction} from '@remix-run/react';
 
 export const meta: MetaFunction<typeof loader> = ({data}) => {
-  return [{title: `Stallmagneten | ${data?.page.title ?? ''}`}];
+  return [{title: `Skrotmagneten | ${data?.page.title ?? ''}`}];
 };
 
 export async function loader({params, context}: LoaderFunctionArgs) {

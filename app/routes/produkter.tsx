@@ -6,7 +6,7 @@ import {useVariantUrl, withoutDecimals} from '~/utils';
 import {Container} from '~/components/Container';
 
 export const meta: MetaFunction<typeof loader> = () => {
-  return [{title: `Stallmagneten | Produkter`}];
+  return [{title: `Skrotmagneten | Produkter`}];
 };
 
 export async function loader({request, context}: LoaderFunctionArgs) {

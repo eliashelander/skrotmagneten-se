@@ -4,7 +4,7 @@ import {Image} from '@shopify/hydrogen';
 import {Container} from '~/components/Container';
 
 export const meta: MetaFunction<typeof loader> = ({data}) => {
-  return [{title: `Stallmagneten | ${data?.article.title ?? ''} bloggpost`}];
+  return [{title: `Skrotmagneten | ${data?.article.title ?? ''} bloggpost`}];
 };
 
 export async function loader({params, context}: LoaderFunctionArgs) {
