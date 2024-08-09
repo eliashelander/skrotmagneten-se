@@ -88,6 +88,7 @@ export function HeaderMenu({
         )}
         {(menu || FALLBACK_HEADER_MENU).items.map((item) => {
           if (!item.url) return null;
+          if (item.url.includes('blogg')) return null;
 
           // if the url is internal, we strip the domain
           const url =
