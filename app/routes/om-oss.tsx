@@ -19,7 +19,7 @@ export default function OmOss() {
             />
             <h2 className="text-3xl py-4">
               Från IT-försäljning till hantverket hovslageri till webshop med
-              stallmagneten och Skrotmagneten.
+              Stallmagneten och Skrotmagneten.
             </h2>
             <p>
               Efter större delen av mitt yrkesverksamma liv som tjänsteman inom

@@ -37,19 +37,19 @@ export default function Homepage() {
           imageSide="right"
         />
         <ImageText
-          imageSrc="https://cdn.shopify.com/s/files/1/0847/4509/3413/files/bekvam-stallmagnet.jpg?v=1702589624"
+          imageSrc="https://cdn.shopify.com/s/files/1/0847/4509/3413/files/skrotmagneten-bekvam.jpg?v=1723216828"
           title="Bekväm utan ryggont"
           text="Skrotmagneten är enklare att använda än en sopkvast. Slipp böja på ryggen och låt hjulen rulla med lågt motstånd."
           imageSide="left"
         />
         <ImageText
-          imageSrc="https://cdn.shopify.com/s/files/1/0847/4509/3413/files/skoning-hovslagare.jpg?v=1702589850"
+          imageSrc="https://cdn.shopify.com/s/files/1/0847/4509/3413/files/skrotmagneten-enkel.jpg?v=1723216256"
           title="Enkel och säker hantering"
           text="Du släpper metallen med ett enkelt grepp på skaftet så du slipper ta bort metallen du samlat upp med fingrarna och riskera att skada dig."
           imageSide="right"
         />
         <ImageText
-          imageSrc="https://cdn.shopify.com/s/files/1/0847/4509/3413/files/bekvam-stallmagnet.jpg?v=1702589624"
+          imageSrc="https://cdn.shopify.com/s/files/1/0847/4509/3413/files/skrotmagneten-miljo.jpg?v=1723216693"
           title="Miljötänk"
           text="Separera all metall från ert skräp och sortera miljövänligt."
           imageSide="left"
