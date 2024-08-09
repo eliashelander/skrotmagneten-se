@@ -6,7 +6,7 @@ export const HeroVideo: React.FC = () => {
     <div className="relative h-[56.25vw] 2xl:max-h-[864px] 3xl:max-h-[992px] 8xl:max-h-[1200px] bg-white overflow-hidden">
       <div className="absolute w-full h-full bg-black opacity-20 z-20"></div>
       <video
-        src="https://cdn.shopify.com/videos/c/o/v/181102f105124df0a133d65d8af61a56.mp4"
+        src="https://cdn.shopify.com/videos/c/o/v/caca53c61eb54c1c93841aa98b8d996d.mp4"
         autoPlay
         muted
         loop // Add loop attribute
