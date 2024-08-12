@@ -7,6 +7,7 @@ export const HeroVideo: React.FC = () => {
       <div className="absolute w-full h-full bg-black opacity-20 z-20"></div>
       <video
         src="https://cdn.shopify.com/videos/c/o/v/caca53c61eb54c1c93841aa98b8d996d.mp4"
+        playsInline
         autoPlay
         muted
         loop // Add loop attribute
