@@ -2,6 +2,10 @@ import {NavLink} from '@remix-run/react';
 import type {FooterQuery, HeaderQuery} from 'storefrontapi.generated';
 import {useRootLoaderData} from '~/root';
 import {Container} from './Container';
+import {Klarna} from './icons/Klarna';
+import {Maestro} from './icons/Maestro';
+import {Mastercard} from './icons/Mastercard';
+import {Visa} from './icons/Visa';
 
 export function Footer({
   menu,
@@ -27,7 +31,7 @@ function FooterMenu({
 
   return (
     <Container>
-      <div className="flex text-white py-16">
+      <div className="flex flex-col md:flex-row text-white py-16 gap-4">
         <div className="flex flex-col flex-1 gap-2">
           <h3 className="text-2xl mb-4">Kundtjänst</h3>
           <a className="text-lg" href="mailto:hej@skrotmagneten.se">
@@ -77,15 +81,14 @@ function FooterMenu({
           </nav>
         </div>
       </div>
-      <div className="flex py-4 gap-4 text-white/80">
-        <span>© 2023 Skrotmagneten</span>
-        <span>|</span>
-        <span>
-          Hemsida skapad och underhålls av{' '}
-          <a target="blank_" href="https://stablepeak.se">
-            StablePeak
-          </a>
-        </span>
+      <div className="flex justify-between py-4 gap-4 text-white/80">
+        <span>© 2024 Skrotmagneten</span>
+        <div className="flex gap-4">
+          <Klarna />
+          <Visa />
+          <Mastercard />
+          <Maestro />
+        </div>
       </div>
     </Container>
   );
