@@ -27,7 +27,7 @@ export default function Products() {
 
   return (
     <Container>
-      <h1 className="text-4xl my-8">Produkter för ett säkrare stall</h1>
+      <h1 className="text-4xl my-8">Produkter mot metalspill</h1>
       <Pagination connection={products}>
         {({nodes, isLoading, PreviousLink, NextLink}) => (
           <>
