@@ -147,6 +147,7 @@ const PRODUCTS_QUERY = `#graphql
         last: $last,
         before: $startCursor,
         after: $endCursor
+        query: "vendor:Skrotmagneten"
       ) {
         nodes {
           ...ProductItem
