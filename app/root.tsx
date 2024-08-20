@@ -145,12 +145,17 @@ export default function App() {
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <Meta />
         <Links />
-        <script
+        {/* <script
           id="Cookiebot"
           src="https://consent.cookiebot.com/uc.js"
           data-cbid="3d4f17c4-e70c-4e35-a4b6-389fe99d0eb3"
           data-blockingmode="auto"
           type="text/javascript"
+        ></script> */}
+        <script
+          id="cookieyes"
+          type="text/javascript"
+          src="https://cdn-cookieyes.com/client_data/889d378a5b40437a9569c1e8/script.js"
         ></script>
       </head>
       <body>
@@ -184,15 +189,10 @@ export function ErrorBoundary() {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        {/* <script
-          id="cookieyes"
-          type="text/javascript"
-          src="https://cdn-cookieyes.com/client_data/d76720de06b83e0b887e2718/script.js"
-        ></script> */}
         <script
           id="cookieyes"
           type="text/javascript"
-          src="https://cdn-cookieyes.com/client_data/03fcee8c8e917bdbe48c53a2/script.js"
+          src="https://cdn-cookieyes.com/client_data/889d378a5b40437a9569c1e8/script.js"
         ></script>
         <Meta />
         <Links />
