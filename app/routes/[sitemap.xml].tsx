@@ -58,6 +58,7 @@ function generateSitemap({
 }) {
   const products = flattenConnection(data.products)
     .filter((product) => product.onlineStoreUrl)
+    .filter((product) => product.title.toLowerCase().includes('skrot'))
     .map((product) => {
       const url = `${baseUrl}/produkter/${xmlEncode(product.handle)}`;
 
@@ -86,6 +87,7 @@ function generateSitemap({
 
   const collections = flattenConnection(data.collections)
     .filter((collection) => collection.onlineStoreUrl)
+    .filter((collection) => collection.handle.includes('skrot'))
     .map((collection) => {
       const url = `${baseUrl}/kategorier/${collection.handle}`;
 
@@ -96,17 +98,17 @@ function generateSitemap({
       };
     });
 
-  const pages = flattenConnection(data.pages)
-    .filter((page) => page.onlineStoreUrl)
-    .map((page) => {
-      const url = `${baseUrl}/sidor/${page.handle}`;
-
-      return {
-        url,
-        lastMod: page.updatedAt,
-        changeFreq: 'weekly',
-      };
-    });
+  const pages = [
+    {url: `${baseUrl}/kontakt`, lastMod: '2024-01-16', changeFreq: 'weekly'},
+    {url: `${baseUrl}/om-oss`, lastMod: '2024-01-16', changeFreq: 'weekly'},
+    {url: `${baseUrl}/kopvilkor`, lastMod: '2024-01-16', changeFreq: 'weekly'},
+    {
+      url: `${baseUrl}/returpolicy`,
+      lastMod: '2024-01-16',
+      changeFreq: 'weekly',
+    },
+    {url: `${baseUrl}/produkter`, lastMod: '2024-01-16', changeFreq: 'weekly'},
+  ];
 
   const urls = [...products, ...collections, ...pages];
 
